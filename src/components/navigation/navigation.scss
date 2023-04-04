@@ -1,0 +1,19 @@
+.navigation {
+    nav {
+        width: max-content;
+        height: max-content;
+
+        ul {
+            display: flex;
+
+            li {
+                list-style-type: none;
+                padding: 0 26px;
+
+                a {
+                    color: #222;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,39 @@
+#Skills {
+    margin-top: 125px;
+
+    .skill_body {
+        min-width: 1070px;
+        max-width: 1070px;
+
+        .projectTitle {
+            width: 40%;
+
+            .container {
+                width: 100%;
+            }
+        }
+    }
+
+    // ========== SKILLS ICON ========== //
+
+    // ========== SKILL LIST ========== //
+    .Skill_List {
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+
+        .skillIcon {
+            img {
+                width: 445px;
+            }
+        }
+
+        .skills {
+            display: flex;
+            justify-content: flex-end;
+            flex-wrap: wrap;
+        }
+
+    }
+}

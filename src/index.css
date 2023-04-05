@@ -6,7 +6,18 @@
 body {
     overflow-x: hidden;
 }
-
+body::-webkit-scrollbar {
+    width: 10px;
+}
+body::-webkit-scrollbar-track {
+    background: #cecece;
+}
+body::-webkit-scrollbar-thumb {
+    background: #888;
+}
+body::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
 @font-face {
     font-family: "SpaceMono";
     src: url("./assets/fontFamily/SpaceMono-Regular.ttf");

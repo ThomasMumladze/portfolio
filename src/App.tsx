@@ -1,13 +1,13 @@
 import "./App.scss";
 // ========== HOOKS ========== //
-import { useState, useEffect } from "react";
 
 // ========== ROUTE ========== //
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Link } from "react-router-dom";
 
 // ========== Components ========== //
 import Navigation from "./components/navigation/Navigation";
 import Button from "./components/button/Button";
+import SocialMedia from "./components/socialMedia/SocialMedia";
 
 // ========== PAGES ========== //
 import PortfolioApp from "./pages/homePage/PortfolioApp";
@@ -17,6 +17,7 @@ import ProjectPage from "./pages/projectPage/ProjectPage";
 // ========== CUSTOM HOOKS ========== //
 import useDarkMode from "./hooks/useDarkMode";
 import { useScroll } from "./hooks/useScroll";
+import AboutMe from "./pages/aboutMe/AboutMe";
 
 function App() {
     const { isDarkMode, handleDarkMode } = useDarkMode();
@@ -82,8 +83,14 @@ function App() {
                 <Route path="/" element={<PortfolioApp />} />
                 <Route path="/resume" element={<ResumePage />} />
                 <Route path="/project" element={<ProjectPage />} />
+                <Route path="/about" element={<AboutMe />} />
             </Routes>
             {/* ========== FOOTER ========== */}
+            <footer id="footer">
+                <div className="footer_body">
+                    <SocialMedia />
+                </div>
+            </footer>
         </div>
     );
 }

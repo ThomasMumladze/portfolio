@@ -3,7 +3,8 @@
     height: max-content;
     padding: 113px 0 0 0;
     display: flex;
-    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 
     .projectTitle {
         margin-bottom: 25px;
@@ -30,23 +31,27 @@
             background-color: #30475E;
         }
 
-        .viewAll {
-            background-color: transparent;
-            border: none;
-            outline: none;
-            cursor: pointer;
+
+
+        a {
+            padding: 0 11px;
+            font-size: 0.95rem;
+            text-decoration: none;
+            color: #222;
             display: flex;
             align-items: center;
             width: max-content;
-            text-transform: uppercase;
+            font-family: "Montserrat";
+            font-weight: 500;
 
-            a {
-                padding: 0 11px;
-                font-size: 0.95rem;
-                font-family: serif;
-                font-weight: 500;
-                text-decoration: none;
-                color: #222;
+            .viewAll {
+                background-color: transparent;
+                border: none;
+                outline: none;
+                cursor: pointer;
+                text-transform: uppercase;
+                margin-left: 10px;
+
             }
 
             svg {
@@ -60,6 +65,8 @@
 
     // PROJECT CARDS WRAPPER
     .projectWrapper {
+        min-width: 1070px;
+        max-width: 1070px;
         width: 100%;
         display: flex;
         align-items: center;

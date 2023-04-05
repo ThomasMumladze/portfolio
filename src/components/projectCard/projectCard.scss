@@ -3,7 +3,7 @@
     width: 321px;
     height: max-content;
     border: solid 1px #30475E;
-    transition: .2s ease-in-out;
+    // transition: .2s ease-in-out;
 
     // PROJECT IMAGE
     .projectImageWrap {
@@ -59,36 +59,42 @@
         padding: 0px 16px 16px 16px;
         display: flex;
 
-        .projectLink_button,
-        .projectSource_button {
+        a {
             width: max-content;
-            height: 37px;
-            text-transform: uppercase;
-            font-family: "FiraCode";
-            padding: 0 20px;
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background-color: transparent;
-            border: solid 1px #30475E;
-            border-radius: 5px;
-            transition: .2s ease-in-out;
+            height: max-content;
+            text-decoration: none;
 
-            &:last-child {
-                margin-left: 10px;
-            }
+            .projectLink_button,
+            .projectSource_button {
+                width: max-content;
+                height: 37px;
+                text-transform: uppercase;
+                font-family: "FiraCode";
+                padding: 0 20px;
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: transparent;
+                border: solid 1px #30475E;
+                border-radius: 5px;
+                transition: .2s ease-in-out;
 
-            svg {
-                width: 19px;
-                height: 19px;
-                margin: 0 0 0 9px;
-            }
+                &:last-child {
+                    margin-left: 10px;
+                }
 
-            &:hover {
-                background-color: #30475E;
-                color: #FFF;
-                fill: #FFF;
+                svg {
+                    width: 19px;
+                    height: 19px;
+                    margin: 0 0 0 9px;
+                }
+
+                &:hover {
+                    background-color: #30475E;
+                    color: #FFF;
+                    fill: #FFF;
+                }
             }
         }
     }

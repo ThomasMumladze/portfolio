@@ -16,3 +16,7 @@
     font-family: "FiraCode";
     src: url("./assets/fontFamily/FiraCode-VariableFont_wght.ttf");
 }
+@font-face {
+    font-family: "Montserrat";
+    src: url("./assets/fontFamily/Montserrat-VariableFont_wght.ttf");
+}

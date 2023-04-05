@@ -6,6 +6,7 @@
     align-items: center;
     justify-content: center;
     position: fixed;
+    z-index: 1;
 
     button {
         width: 80px;
@@ -16,8 +17,10 @@
         cursor: pointer;
         display: flex;
         align-items: center;
+        font-family: "FiraCode";
 
         p {
+            font-weight: 100;
             text-transform: uppercase;
             padding: 0 7px;
             font-size: .95rem;
@@ -34,10 +37,11 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 9px 61px;
+        padding: 19px 61px;
         transition: 0.2s ease-in-out;
 
         .TITLE {
+            font-size: .8rem;
             color: #2b3442;
             font-family: "SpaceMono";
             font-weight: 600;
@@ -50,6 +54,10 @@
     }
 
     .header_body-onScroll {
+        color: #FFF;
+        background-color: #4E6E81;
+        border-top-left-radius: 100px;
+        border-bottom-right-radius: 100px;
         width: 50%;
         padding: 9px 61px;
         margin-top: 33px;
@@ -59,15 +67,78 @@
         transition: 0.2s ease-in-out;
 
         .TITLE {
-            color: #2b3442;
+            color: #FFF;
             font-family: "SpaceMono";
-            font-weight: 600;
+            font-weight: 100;
             text-transform: uppercase;
 
             h1 {
-                font-size: 1.5rem;
+                font-size: 1.3rem;
+                font-weight: 100;
                 transition: 0.2s ease-in-out;
             }
         }
+
+        button {
+            p {
+                color: #FFF;
+            }
+
+            svg {
+                fill: #FFF;
+            }
+        }
     }
+}
+
+// ========== FOOTER ========== //
+#footer {
+    width: 100%;
+    height: max-content;
+    margin-top: 30px;
+    font-family: "Raleway";
+
+    .footer_body {
+        padding: 39px 61px;
+    }
+}
+
+// ========== DARK_MODE ========== //
+.darkMode_App #header .header_body {
+    background-color: #171b1f;
+}
+
+.darkMode_App {
+    background-color: #222831;
+    color: #ffF;
+}
+
+.darkMode_App :where(h1, h2, h3, span, p, svg, a) {
+    color: #FFF;
+    fill: #FFF;
+    font-weight: 400;
+}
+
+.darkMode_App #project .projectWrapper .projectCard {
+    background-color: #171b1f;
+}
+
+.darkMode_App :where(.projectLine) {
+    background-color: #C778DD !important;
+}
+
+.darkMode_App #project .projectWrapper .projectCard .project_Link button {
+    border: solid 1px #C778DD;
+
+    &:hover {
+        background-color: #C778DD;
+    }
+}
+
+.darkMode_App :where(.skillContainer) {
+    background-color: #171b1f;
+}
+
+.darkMode_App #footer .footer_body {
+    background-color: #171b1f;
 }

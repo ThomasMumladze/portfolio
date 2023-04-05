@@ -1,0 +1,36 @@
+.socialMedia {
+    width: max-content;
+    height: max-content;
+
+    .gitHub,
+    .linkedin,
+    .instagram,
+    .twitch,
+    .discord {
+        display: flex;
+        align-items: center;
+        margin: 12px 0;
+
+        svg {
+            width: 23px;
+            height: 23px;
+            margin: 0 10px;
+        }
+
+        a {
+            text-decoration: none;
+            font-family: "FiraCode";
+            letter-spacing: .2px;
+            transition: .1s ease-in-out;
+
+            &:hover {
+                color: #C778DD;
+            }
+        }
+
+        p {
+            font-family: "FiraCode";
+            color: rgba(128, 128, 128, 0.65);
+        }
+    }
+}

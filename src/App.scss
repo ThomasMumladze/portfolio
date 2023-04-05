@@ -54,8 +54,9 @@
     }
 
     .header_body-onScroll {
-        color: #FFF;
-        background-color: #4E6E81;
+        box-shadow: 0 0 2px 0 rgb(0 0 0 / 95%);
+        color: #222;
+        background-color: #f7f7f8;
         border-top-left-radius: 100px;
         border-bottom-right-radius: 100px;
         width: 50%;
@@ -67,7 +68,7 @@
         transition: 0.2s ease-in-out;
 
         .TITLE {
-            color: #FFF;
+            color: #222;
             font-family: "SpaceMono";
             font-weight: 100;
             text-transform: uppercase;
@@ -81,11 +82,11 @@
 
         button {
             p {
-                color: #FFF;
+                color: #222;
             }
 
             svg {
-                fill: #FFF;
+                fill: #222;
             }
         }
     }
@@ -99,6 +100,7 @@
     font-family: "Raleway";
 
     .footer_body {
+        background-color: #f7f7f8;
         padding: 39px 61px;
     }
 }
@@ -141,4 +143,34 @@
 
 .darkMode_App #footer .footer_body {
     background-color: #171b1f;
+}
+
+.darkMode_App #header .header_body-onScroll {
+    background-color: #171b1f;
+
+    button {
+        p {
+            color: #FFF;
+        }
+
+        svg {
+            fill: #FFF;
+        }
+    }
+
+    .navigation {
+        nav {
+            ul {
+                li {
+                    a {
+                        color: #FFF;
+
+                        &:hover {
+                            color: #C778DD;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

@@ -1,8 +1,6 @@
-import "./button.scss";
-
 // ========== Interface ========== //
 interface Props {
-    content: string;
+    content: any;
     buttonClassName: string;
     clickEvent: () => void;
 }

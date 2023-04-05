@@ -8,10 +8,21 @@
 
             li {
                 list-style-type: none;
-                padding: 0 26px;
+                padding: 0 21px;
 
                 a {
-                    color: #222;
+                    color: #4b6a9b;
+                    text-decoration: none;
+                    font-family: "Raleway";
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    font-size: .85rem;
+                    transition: .2s ease-in-out all;
+
+                    &:hover {
+                        color: #222;
+                        text-decoration: underline;
+                    }
                 }
             }
         }

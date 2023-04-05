@@ -7,7 +7,7 @@ export const useScroll = ():Params => {
     const [scroll , setScroll] = useState<boolean | null> (null)
 
     const handleScroll = () => {
-        if(scrollY >= 55){
+        if(scrollY >= 105){
             setScroll(true)
         }else{
             setScroll(false)

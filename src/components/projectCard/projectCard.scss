@@ -92,3 +92,23 @@
         }
     }
 }
+
+
+// ========== DARK MODE ========== //
+.darkMode_App {
+    .projectCard {
+        background-color: #141a1f;
+    }
+
+    .project_Link {
+        a {
+            button {
+                border: solid 1px #C778DD;
+
+                &:hover {
+                    background-color: #C778DD;
+                }
+            }
+        }
+    }
+}

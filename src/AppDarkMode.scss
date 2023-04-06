@@ -1,0 +1,28 @@
+.darkMode_App {
+    background-color: #222831;
+}
+
+.darkMode_App :where(h1, h3, h2, p, span, a, svg) {
+    color: #fff;
+    font-weight: 400;
+}
+
+.darkMode_App :where(.footer_body) {
+    background-color: #141a1f !important;
+}
+
+.darkMode_App {
+    .header_body-onScroll {
+        background-color: #2E3840 !important;
+    }
+}
+
+.darkMode_App .header_body {
+    background-color: #141a1f;
+}
+
+.darkMode_App {
+    .header_body-onScroll :where(a, p, svg) {
+        color: #fff;
+    }
+}

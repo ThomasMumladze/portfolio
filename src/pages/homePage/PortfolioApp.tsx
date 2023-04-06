@@ -3,16 +3,13 @@ import "./PortfolioApp.scss";
 // ========== SECTIONS ========== //
 import ProjectSection from "../../components/@SECTIONS/projectSection/ProjectSection";
 import SkillsSection from "../../components/@SECTIONS/skillsSection/SkillsSection";
-import PersonSection from "../../components/@SECTIONS/personSection/Person";
-import ServicesSection from "../../components/@SECTIONS/servicesSection/ServicesSection";
+import HeroSection from "../../components/@SECTIONS/heroSection/HeroSection";
 
 const PortfolioApp = () => {
     return (
         <div className="portfolioApp">
-            {/* ========== PERSON SECTION ========== */}
-            <PersonSection />
-            {/* ========== SERVICES SECTION ========== */}
-            <ServicesSection />
+            {/* ========== HERO SECTION ========== */}
+            <HeroSection />
             {/* ========== PROJECT SECTION ========== */}
             <ProjectSection />
             {/* ========== SKILLS SECTION ========== */}

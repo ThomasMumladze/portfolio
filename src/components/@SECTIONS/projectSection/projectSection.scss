@@ -1,5 +1,5 @@
 #projectSection {
-    margin: 43px 0;
+    margin: 73px 0;
 
     .projectSection_body {
         min-width: 1070px;
@@ -41,7 +41,8 @@
                     display: flex;
                     background-color: transparent;
                     border: none;
-                    color: rgba(57, 83, 109, 0.9);
+                    color: #1b2835;
+                    transition: .2s ease-in-out;
 
                     svg {
                         margin: 0 10px;
@@ -51,7 +52,7 @@
                     }
 
                     &:hover {
-                        color: #1b2835;
+                        color: #C778DD;
                     }
                 }
             }
@@ -81,4 +82,18 @@
         }
     }
 
+}
+
+
+// ========== DARK MODE ========== //
+.darkMode_App {
+    #projectSection {
+        .projectSection_body {
+            .projectTitle {
+                .projectLine {
+                    background-color: #C778DD;
+                }
+            }
+        }
+    }
 }

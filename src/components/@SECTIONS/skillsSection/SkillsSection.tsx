@@ -1,13 +1,13 @@
-import "./skills.scss";
+import "./skillsSection.scss";
 // ========== COMPONENTS ========== //
 import SkillContainer from "../../skillContainer/SkillContainer";
 
 // ========== HOOKS ========== //
 
-const Skills = () => {
+const SkillsSection = () => {
     return (
-        <section id="Skills">
-            <div className="skill_body">
+        <section id="SkillsSection">
+            <div className="skillsSection_body">
                 <div className="skillTitle">
                     <h1>Skill</h1>
                     <div className="skill_Line"></div>
@@ -25,4 +25,4 @@ const Skills = () => {
     );
 };
 
-export default Skills;
+export default SkillsSection;

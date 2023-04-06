@@ -1,6 +1,5 @@
 import "./skills.scss";
-// ========== IMAGE ========== //
-import programmingIcon from "../../../assets/icon/top10lan.jpg";
+// ========== COMPONENTS ========== //
 import SkillContainer from "../../skillContainer/SkillContainer";
 
 // ========== HOOKS ========== //

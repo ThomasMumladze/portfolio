@@ -1,9 +1,9 @@
 .projectCard {
     background-color: #FFF;
-    width: 321px;
+    min-width: 311px;
+    width: 311px;
     height: max-content;
     border: solid 1px #30475E;
-    // transition: .2s ease-in-out;
 
     // PROJECT IMAGE
     .projectImageWrap {
@@ -52,42 +52,35 @@
         }
     }
 
-    // PROJECT LINK 
+    &:hover {
+        img {
+            width: 110%;
+            height: 110%;
+        }
+    }
+
+    // PROJECT LINK BUTTON
     .project_Link {
-        width: 100%;
-        gap: 16px;
-        padding: 0px 16px 16px 16px;
         display: flex;
+        gap: 16px;
+        padding: 10px;
 
         a {
-            width: max-content;
-            height: max-content;
             text-decoration: none;
 
-            .projectLink_button,
-            .projectSource_button {
-                width: max-content;
+            button {
                 height: 37px;
-                text-transform: uppercase;
-                font-family: "FiraCode";
-                padding: 0 20px;
-                cursor: pointer;
                 display: flex;
                 align-items: center;
-                justify-content: center;
+                padding: 0 16px;
                 background-color: transparent;
                 border: solid 1px #30475E;
-                border-radius: 5px;
                 transition: .2s ease-in-out;
 
-                &:last-child {
-                    margin-left: 10px;
-                }
-
                 svg {
-                    width: 19px;
-                    height: 19px;
-                    margin: 0 0 0 9px;
+                    width: 21px;
+                    height: 21px;
+                    margin-left: 7px;
                 }
 
                 &:hover {
@@ -96,13 +89,6 @@
                     fill: #FFF;
                 }
             }
-        }
-    }
-
-    &:hover {
-        img {
-            width: 110%;
-            height: 110%;
         }
     }
 }

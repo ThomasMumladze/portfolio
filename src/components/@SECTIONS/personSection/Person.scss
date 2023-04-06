@@ -1,0 +1,52 @@
+#person {
+    width: 100%;
+    height: max-content;
+    margin: 63px 0;
+
+    .personSection_body {
+        margin: 63px auto;
+        width: 85%;
+        height: max-content;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+
+        .imageWrapper {
+            width: max-content;
+            height: max-content;
+
+            .imageContainer {
+                width: 469px;
+                height: 396px;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+
+            }
+
+            .workTime {
+                margin-top: 4px;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                font-size: 0.9rem;
+                border: solid 1px #ccc;
+                padding: 8px;
+                font-family: "FiraCode";
+
+                div {
+                    width: 16px;
+                    height: 16px;
+                    background-color: #C778DD;
+                    margin-right: 10px;
+                }
+
+                p {
+                    color: #ABB2BF
+                }
+            }
+        }
+    }
+}

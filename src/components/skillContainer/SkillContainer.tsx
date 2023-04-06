@@ -1,4 +1,5 @@
 import "./skillContainer.scss";
+
 const SkillContainer = () => {
     return (
         <div className="skillContainer">
@@ -6,7 +7,7 @@ const SkillContainer = () => {
                 <h2>language</h2>
             </div>
             <div className="skill_description">
-                <span>javaScript Python TypeScript</span>
+                <span>js python react scss css</span>
             </div>
         </div>
     );

@@ -1,15 +1,19 @@
+import "./button.scss";
+
+// ========== Link ========== //
+import { Link } from "react-router-dom";
+
 // ========== Interface ========== //
 interface Props {
+    linkTo: string;
     content: any;
-    buttonClassName: string;
-    clickEvent: () => void;
 }
 const Button = (props: Props) => {
-    const { content, buttonClassName, clickEvent } = props;
+    const { content, linkTo } = props;
     return (
-        <button className={buttonClassName} onClick={clickEvent}>
-            {content}
-        </button>
+        <Link to={linkTo}>
+            <button className="linkButton">{content}</button>
+        </Link>
     );
 };
 

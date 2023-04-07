@@ -1,8 +1,12 @@
 import "./skillsSection.scss";
+// ========== HOOKS ========== //
+import { useState } from "react";
+
 // ========== COMPONENTS ========== //
 import SkillContainer from "../../skillContainer/SkillContainer";
 
-// ========== HOOKS ========== //
+// ========== SKILL DATA ========== //
+import skillsData from "../../../@data/skillData.json";
 
 const SkillsSection = () => {
     return (
@@ -13,12 +17,13 @@ const SkillsSection = () => {
                     <div className="skill_Line"></div>
                 </div>
                 <div className="skillList">
-                    <SkillContainer />
-                    <SkillContainer />
-                    <SkillContainer />
-                    <SkillContainer />
-                    <SkillContainer />
-                    <SkillContainer />
+                    {skillsData.map((item) => (
+                        <SkillContainer
+                            key={item.id}
+                            title={item.title}
+                            content={item.content}
+                        />
+                    ))}
                 </div>
             </div>
         </section>

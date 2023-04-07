@@ -1,13 +1,16 @@
 import "./skillContainer.scss";
-
-const SkillContainer = () => {
+interface Props {
+    title: string;
+    content: string;
+}
+const SkillContainer = (props: Props) => {
     return (
         <div className="skillContainer">
             <div className="skills_title">
-                <h2>language</h2>
+                <h2>{props.title}</h2>
             </div>
             <div className="skill_description">
-                <span>js python react scss css</span>
+                <span>{props.content}</span>
             </div>
         </div>
     );

@@ -7,8 +7,8 @@ import { useState } from "react";
 import Button from "../../button/Button";
 import ProjectCard from "../../projectCard/ProjectCard";
 
-// ========== LINKS ========== //
-import { Link } from "react-router-dom";
+// ========== PROJECT DATA ========== //
+import projectData from "../../../@data/projectData.json";
 
 const ProjectSection = () => {
     return (
@@ -19,8 +19,8 @@ const ProjectSection = () => {
                         <h1>Project</h1>
                         <div className="projectLine"></div>
                     </div>
-                    {/* btn */}
                     <Button
+                        target="_self"
                         linkTo="/project"
                         content={
                             <>
@@ -48,9 +48,16 @@ const ProjectSection = () => {
                 </div>
                 <div className="projectWrapper">
                     <div className="projectCard_List">
-                        <ProjectCard />
-                        <ProjectCard />
-                        <ProjectCard />
+                        {projectData.map((item) => (
+                            <ProjectCard
+                                key={item.id}
+                                technologies={item.technologies}
+                                title={item.title}
+                                description={item.description}
+                                LiveServerLink={item.LiveServerLink}
+                                codeSourceLink={item.codeSourceLink}
+                            />
+                        ))}
                     </div>
                 </div>
             </div>

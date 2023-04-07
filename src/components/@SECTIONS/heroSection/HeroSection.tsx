@@ -47,7 +47,7 @@ const HeroSection = () => {
                                 </svg>
                             </>
                         }
-                        linkTo={"/"}
+                        linkTo={"/about"}
                     />
                 </div>
                 <div className="image">

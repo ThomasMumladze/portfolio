@@ -20,19 +20,35 @@
         font-family: "FiraCode";
 
         p {
+            transition: .2s ease-in-out;
             font-weight: 100;
             text-transform: uppercase;
             padding: 0 7px;
             font-size: .95rem;
+            color: #4b6a9b;
+            font-weight: 400;
         }
 
         svg {
+            transition: .2s ease-in-out;
+            stroke-width: 1px;
             width: 24.5px;
             height: 24.5px;
+            fill: #4b6a9b;
+        }
+
+        &:hover {
+
+            p,
+            svg {
+                color: #222;
+                fill: #222;
+            }
         }
     }
 
     .header_body {
+        background-color: #f7f7f8;
         width: 100%;
         display: flex;
         align-items: center;
@@ -55,7 +71,6 @@
 
     .header_body-onScroll {
         box-shadow: 0 0 2px 0 rgb(0 0 0 / 95%);
-        color: #222;
         background-color: #f7f7f8;
         border-top-left-radius: 100px;
         border-bottom-right-radius: 100px;
@@ -68,7 +83,6 @@
         transition: 0.2s ease-in-out;
 
         .TITLE {
-            color: #222;
             font-family: "SpaceMono";
             font-weight: 100;
             text-transform: uppercase;
@@ -77,16 +91,6 @@
                 font-size: 1.3rem;
                 font-weight: 100;
                 transition: 0.2s ease-in-out;
-            }
-        }
-
-        button {
-            p {
-                color: #222;
-            }
-
-            svg {
-                fill: #222;
             }
         }
     }
@@ -102,5 +106,69 @@
     .footer_body {
         background-color: #f7f7f8;
         padding: 39px 61px;
+
+        .copyRight {
+            margin: 15px 0;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            p {
+                padding: 0 6px;
+                font-family: "SpaceMono";
+                text-transform: lowercase;
+                color: #ABB2BF;
+            }
+        }
+
+        .contact-info {
+            width: 100%;
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-evenly;
+
+            .footerNav {
+                display: flex;
+                flex-direction: column;
+
+                a {
+                    padding: 6px 0;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    transition: .2s ease-in-out;
+
+                    &:hover {
+                        color: #C778DD;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// ========== DARK MODE ========== //
+.darkMode_App #header {
+    button {
+        P {
+            color: #f7f7f8;
+        }
+
+        svg {
+            fill: #f7f7f8;
+        }
+
+        &:hover {
+
+            p,
+            svg {
+                color: #C778DD;
+                fill: #C778DD;
+            }
+        }
+    }
+
+    .header_body {
+        background-color: #141a1f;
     }
 }

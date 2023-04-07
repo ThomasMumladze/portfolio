@@ -84,7 +84,20 @@ function App() {
             {/* ========== FOOTER ========== */}
             <footer id="footer">
                 <div className="footer_body">
-                    <SocialMedia />
+                    <div className="contact-info">
+                        <SocialMedia />
+                        <div className="footerNav">
+                            <Link to={"/"}>home</Link>
+                            <Link to={"/resume"}>resume</Link>
+                            <Link to={"/project"}>project</Link>
+                            <Link to={"/about"}>about</Link>
+                        </div>
+                    </div>
+                    <div className="copyRight">
+                        <p>no CopyRights </p>
+                        <p>{new Date().getFullYear()}.</p>
+                        <p>Made By RooK</p>
+                    </div>
                 </div>
             </footer>
         </div>

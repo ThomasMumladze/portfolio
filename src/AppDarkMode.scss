@@ -17,10 +17,6 @@
     }
 }
 
-.darkMode_App .header_body {
-    background-color: #141a1f;
-}
-
 .darkMode_App {
     .header_body-onScroll :where(a, p, svg) {
         color: #fff;

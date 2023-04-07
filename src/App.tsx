@@ -1,19 +1,12 @@
 import "./App.scss";
 import "./AppDarkMode.scss";
-// ========== HOOKS ========== //
 
 // ========== ROUTE ========== //
-import { Routes, Route, Link } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 
 // ========== Components ========== //
 import Navigation from "./components/navigation/Navigation";
 import SocialMedia from "./components/socialMedia/SocialMedia";
-
-// ========== PAGES ========== //
-import PortfolioApp from "./pages/homePage/PortfolioApp";
-import ResumePage from "./pages/resumePage/ResumePage";
-import ProjectPage from "./pages/projectPage/ProjectPage";
-import AboutMe from "./pages/aboutMe/AboutMe";
 
 // ========== CUSTOM HOOKS ========== //
 import useDarkMode from "./hooks/useDarkMode";
@@ -74,13 +67,8 @@ function App() {
                     </button>
                 </div>
             </header>
-            {/* ========== ROUTES ========== */}
-            <Routes>
-                <Route path="/" element={<PortfolioApp />} />
-                <Route path="/resume" element={<ResumePage />} />
-                <Route path="/project" element={<ProjectPage />} />
-                <Route path="/about" element={<AboutMe />} />
-            </Routes>
+            {/* ========== OUTLET ========== */}
+            <Outlet />
             {/* ========== FOOTER ========== */}
             <footer id="footer">
                 <div className="footer_body">

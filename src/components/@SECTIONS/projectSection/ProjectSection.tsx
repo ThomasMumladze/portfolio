@@ -50,6 +50,7 @@ const ProjectSection = () => {
                     <div className="projectCard_List">
                         {projectData.map((item) => (
                             <ProjectCard
+                                imgUrl={item.imgUrl}
                                 key={item.id}
                                 technologies={item.technologies}
                                 title={item.title}

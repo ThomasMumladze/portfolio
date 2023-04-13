@@ -3,13 +3,11 @@ import "./projectCard.scss";
 // ========== COMPONENTS ========== //
 import Button from "../button/Button";
 
-// ========== LINKS ========== //
-import { Link } from "react-router-dom";
-
 // ========== INTERFACES ========== //
 interface Props {
     technologies: string | null;
     title: string | null;
+    imgUrl: string;
     description: string | null;
     LiveServerLink: string | null;
     codeSourceLink: string | null;
@@ -18,10 +16,7 @@ const ProjectCard = (props: Props) => {
     return (
         <div className="projectCard">
             <div className="projectImageWrap">
-                <img
-                    src={"https://cdn.wallpapersafari.com/93/57/15OE63.jpg"}
-                    alt="..."
-                />
+                <img src={props.imgUrl} alt="..." />
             </div>
             <div className="project_technologies">
                 <span> {props.technologies} </span>

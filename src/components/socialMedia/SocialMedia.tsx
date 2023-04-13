@@ -1,10 +1,4 @@
 import "./socialMedia.scss";
-// ========== HOOKS ========== //
-import { useState, useEffect, useRef } from "react";
-
-// ========== AXIOS ========== //
-import { getGitHubUser } from "../../api/gitHub";
-
 // ========== LINKS ========== //
 import { Link } from "react-router-dom";
 

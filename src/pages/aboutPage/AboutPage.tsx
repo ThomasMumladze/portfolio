@@ -1,5 +1,5 @@
 import "./aboutPage.scss";
-const AboutMe = () => {
+const AboutPage = () => {
     return (
         <div className="AboutMe">
             <p>AboutMe</p>
@@ -7,4 +7,4 @@ const AboutMe = () => {
     );
 };
 
-export default AboutMe;
+export default AboutPage;

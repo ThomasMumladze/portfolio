@@ -3,12 +3,115 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 790px;
+    flex-direction: column;
+    height: 100%;
     font-size: 2rem;
     font-family: sans-serif;
+    padding-top: 115px;
+    min-width: 856px;
+    width: max-content;
+    margin: 0 auto;
 
-    a {
-        padding: 0 15px;
-        color: #d22;
+    .resume_head {
+        width: 100%;
+        width: max-content;
+        display: flex;
+        align-items: center;
+
+        .imgContainer {
+            width: 196px;
+            height: 196px;
+            border-bottom-left-radius: 50%;
+            border-bottom-right-radius: 50%;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            img {
+                width: 100%;
+                object-fit: cover;
+                height: 100%;
+            }
+        }
+
+        .name_position {
+            width: 406px;
+            text-align: right;
+            font-family: "Raleway";
+
+            .personName {
+                width: 100%;
+                padding: 8px 13px;
+                background-color: #f7f7f8;
+            }
+
+            .position {
+                padding: 8px 13px;
+            }
+
+            h2 {
+                font-size: 1.8rem;
+                font-weight: 500;
+            }
+
+            h3 {
+                font-size: 1.3rem;
+                font-weight: 400;
+            }
+        }
+    }
+
+    .resume_Body {
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-evenly;
+
+        .contact,
+        .skils,
+        .work-experience,
+        .education-collage-university {
+            margin: 35px 0;
+
+            .title {
+                border-left: solid 1px #ccc;
+                padding: 4px 16px;
+                min-width: 296px;
+                background-color: #f7f7f8;
+
+                h1 {
+                    font-size: 1.3rem;
+                    font-family: "Montserrat";
+                    text-transform: uppercase;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+}
+
+// ========== DARK MODE ========== //
+.darkMode_App {
+    .resume {
+        .resume_head {
+            .name_position {
+                .personName {
+                    background-color: #141a1f;
+                }
+            }
+        }
+
+        .resume_Body {
+
+            .contact,
+            .skils,
+            .work-experience,
+            .education-collage-university {
+                .title {
+                    background-color: #141a1f;
+                }
+            }
+        }
     }
 }

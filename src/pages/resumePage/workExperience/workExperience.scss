@@ -1,0 +1,60 @@
+.workExperience {
+    margin: 16px 0;
+
+    .position {
+        width: 100%;
+
+        h1 {
+            font-size: 0.95rem;
+            font-weight: 600;
+            text-transform: capitalize;
+        }
+    }
+
+    .company {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 8px 0;
+
+        span {
+            font-weight: 600;
+        }
+
+        p {
+            font-size: .86rem;
+            padding: 0 10px;
+            font-weight: 600;
+            text-transform: capitalize;
+        }
+    }
+
+    .description {
+        margin-top: 7px;
+        width: 100%;
+        height: max-content;
+        padding: 4px 9px 4px 9px;
+        border-left: solid 1px green;
+        display: flex;
+        align-items: center;
+        font-size: 1rem;
+
+        svg {
+            margin: 0 10px;
+        }
+    }
+}
+
+// ========== DARK MDOE ========== //
+.darkMode_App {
+    .workExperience {
+
+        .description {
+
+            svg {
+                fill: #C778DD;
+            }
+        }
+    }
+}

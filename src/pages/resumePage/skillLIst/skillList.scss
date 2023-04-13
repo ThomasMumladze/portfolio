@@ -1,0 +1,80 @@
+.skillList-Wrapper {
+    margin: 12px 0;
+    padding-left: 12px;
+    width: 100%;
+    font-family: "Raleway";
+
+    .skill-title {
+        padding: 2px 4px;
+        text-transform: capitalize;
+        font-size: 1.2rem;
+        color: black;
+
+        p {
+            font-weight: 300;
+        }
+    }
+
+    .level-experience {
+        width: 100%;
+        height: 4px;
+        margin: 6px 0;
+        display: flex;
+        align-items: center;
+
+        .indicator {
+            width: 80%;
+            height: 5px;
+            background-color: #dcdcf8;
+
+            div {
+                background-Color: #9494ff;
+                height: 100%;
+            }
+
+            .html5_lvl {
+                width: 95%;
+            }
+
+            .css3_lvl {
+                width: 90%;
+            }
+
+            .js_lvl {
+                width: 70%;
+            }
+
+            .react_lvl {
+                width: 60%;
+            }
+
+            .python_lvl {
+                width: 40%;
+            }
+
+            .django_lvl {
+                width: 10%;
+            }
+        }
+
+        p {
+            padding: 0 6px;
+            font-size: 1.20rem;
+        }
+    }
+}
+
+// ========== DARK MODE ========== //
+.darkMode_App {
+    .skillList-Wrapper {
+        .level-experience {
+            .indicator {
+                background-color: #141a1f;
+
+                div {
+                    background-color: #c778dd;
+                }
+            }
+        }
+    }
+}

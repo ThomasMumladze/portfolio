@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 interface Props {
     linkTo: string;
     content: any;
-    target: string;
+    target?: string;
 }
 const Button = (props: Props) => {
     const { content, linkTo, target } = props;

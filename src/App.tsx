@@ -32,7 +32,7 @@ const routes = createBrowserRouter(
 );
 
 // ========== CONTEXT ========== //
-import { createContext } from "react";
+import { createContext, useState } from "react";
 export const appContext = createContext<any>(null);
 
 function App() {

@@ -2,7 +2,7 @@
     {
         "id": 0,
         "technologies": "React.JS , TypeScript  ,  SCSS",
-        "imgUrl": "",
+        "imgUrl": "", 
         "title": "GitHub User Search-APP",
         "description": "Search users by user name",
         "LiveServerLink": "https://github-usersearch-app.netlify.app/",

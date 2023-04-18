@@ -27,3 +27,23 @@
         }
     }
 }
+
+// ========== DARK MODE ========== //
+
+.darkMode_App {
+    .navigation {
+        nav {
+            ul {
+                li {
+                    a {
+                        color: #fff;
+
+                        &:hover {
+                            color: #C778DD;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

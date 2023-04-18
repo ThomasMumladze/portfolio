@@ -1,6 +1,8 @@
+import "./resumePage.scss";
+
+// ========== COMPONENTS ========== //
 import ContactInfo from "./contactInfo/ContactInfo";
 import Education from "./education/Education";
-import "./resumePage.scss";
 import SkillList from "./skillLIst/SkillList";
 import WorkExperience from "./workExperience/WorkExperience";
 

@@ -30,7 +30,7 @@ const HeroSection = () => {
                     <h1>i'm Thomas mumladze</h1>
                     <p className="about_Description">
                         Front-End Developer. creating the web application which
-                        is customized for User. and also use python to store and
+                        is customized for User and use python to store and
                         organize data.
                     </p>
                     <Button

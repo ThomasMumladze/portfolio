@@ -1,36 +1,58 @@
+import "./root.scss";
+
 // ========== Components ========== //
 import Navigation from "../../components/navigation/Navigation";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
 
 // ========== ROUTE ========== //
-import { Link, Outlet } from "react-router-dom";
-import { useContext } from "react";
+import { Link, Outlet, useLocation } from "react-router-dom";
 
 // ========== CONTEXT ========== //
+import { useContext } from "react";
 import { appContext } from "../../App";
 
 const Root = () => {
+    // --------------- useContext
     const context = useContext(appContext);
+
+    // --------------- location WHERE pathName example /resume /proejct
+    const location = useLocation();
+
     return (
         <>
             {/* ========== HEADER ========== */}
             <header id="header">
                 <div
                     className={
-                        context.scroll ? "header_body-onScroll" : "header_body"
+                        location.pathname === "/"
+                            ? context.scroll
+                                ? "header_body-onScroll"
+                                : "header_body"
+                            : "header_body"
                     }
                 >
                     <div className="TITLE">
                         <h1>Front End Developer</h1>
                     </div>
-                    {context.scroll ? (
+                    {location.pathname === "/" ? (
+                        <>
+                            {context.scroll ? (
+                                <Navigation
+                                    menuClassName="navigationMenu"
+                                    menuLink_1="home"
+                                    menuLink_2="resume"
+                                    menuLink_3="project"
+                                />
+                            ) : null}
+                        </>
+                    ) : (
                         <Navigation
                             menuClassName="navigationMenu"
                             menuLink_1="home"
                             menuLink_2="resume"
                             menuLink_3="project"
                         />
-                    ) : null}
+                    )}
                     <button onClick={context.handleDarkMode}>
                         {context.isDarkMode ? (
                             <>
@@ -64,8 +86,10 @@ const Root = () => {
                     </button>
                 </div>
             </header>
+
             {/* ========== OUTLET ========== */}
             <Outlet />
+
             {/* ========== FOOTER ========== */}
             <footer id="footer">
                 <div className="footer_body">

@@ -14,7 +14,9 @@ const HeroSection = () => {
     useEffect(() => {
         try {
             if (ref.current) {
-                getGitHubUser.get("").then((res) => setUserImage(res.data));
+                getGitHubUser
+                    .get("/ThomasMumladze")
+                    .then((res) => setUserImage(res.data));
                 ref.current = false;
             }
         } catch (error) {
